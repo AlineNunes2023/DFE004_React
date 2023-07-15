@@ -2,6 +2,7 @@ import './App.css';
 import MovieRow from './componentes/MovieRow';
 import React, { useEffect, useState } from 'react';
 import Tmdb from './Tmdb';
+import Trailer from './componentes/Trailer/Trailer';
 
 export default() => {
 
@@ -20,6 +21,15 @@ loadAll();
 
 return(
 <div className="page">
+
+<div className= "content-trailer">
+
+<Trailer></Trailer>
+
+</div>
+
+
+
 <section className="lists">
 {movieList.map((item,key)=> (
 
